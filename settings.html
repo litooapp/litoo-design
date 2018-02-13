@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Litoo - Paramètres</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="nav-menu" role="navigation" id="menu">
+    <div class="nav-menu-header">
+      <div class="nav-menu-header">
+        <img src="images/app.png" width="120" height="120" alt=""/>
+      </div>
+    </div>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="home.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-newspaper-o"></div>
+      </div>
+      <div class="nav-menu-titles">News</div>
+      <div class="nav-menu-text-right">6</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="home.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-star stars"></div>
+      </div>
+      <div class="nav-menu-titles">Favoris</div>
+      <div class="nav-menu-text-right stars">2</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="stars.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-users"></div>
+      </div>
+      <div class="nav-menu-titles">Personnalités</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="settings.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-cog"></div>
+      </div>
+      <div class="nav-menu-titles">Paramètres</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="login.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-sign-out"></div>
+      </div>
+      <div class="nav-menu-titles">Se déconnecter</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link last" href="about.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-info"></div>
+      </div>
+      <div class="nav-menu-titles">À propos de Litoo</div>
+    </a>
+  </nav>
+  <!-- End menu -->
+  <!-- Header -->
+  <header class="navbar push">
+    <div class="navbar-button left">
+      <div href="#menu" id="toggle" class="navbar-button-icon home-icon">
+        <div class="bar-home-icon top"></div>
+        <div class="bar-home-icon middle"></div>
+        <div class="bar-home-icon bottom"></div>
+      </div>
+    </div>
+    <div class="navbar-title">Paramètres</div>
+    <div class="navbar-user">
+      <img class="avatar-image" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p48x48/19883991_10212759643722453_7202759091900561778_n.jpg?oh=eaba647904f88ae7f5d5f84c03baf430&oe=5A0ADCF5" alt="" />
+    </div>
+  </header>
+  <!-- End header -->
+  <!-- Content -->
+  <div class="page-content u-relative push" id="panel">
+    <!-- Loading spinner -->
+    <div class="page-content loading-mask">
+      <div class="loading-icon">
+        <div class="fa fa-spinner"></div>
+      </div>
+    </div>
+    <!-- End loading spinner -->
+    <div class="w-form padding u-padding-top"> <!-- w-form only for templating  -->
+      <form action="#">
+        <div class="separator-button-input"></div>
+        <div>  
+          <h3>
+            <div class="fa fa-google-plus-official"></div> 
+            <label>Laurent Gilly</label>
+          </h3>
+          <div class="separator-fields"></div>
+        </div>
+        <div>
+          <div class="u-clearfix input-form one-line">
+            <label class="label-form middle" for="email">Améliorer l'expérience Litoo</label>
+            <div class="u-clearfix checkbox-field">
+              <div class="checkbox-handle"></div>
+              <input class="checkbox-input" id="checkbox_help" type="checkbox" name="checkbox_help">
+              <label class="checkbox-label" for="checkbox_help"></label>
+            </div>
+          </div>
+          <div class="separator-fields"></div>
+        </div>
+        <div>
+          <div class="u-clearfix input-form one-line">
+            <label class="label-form middle" for="email">Notifications</label>
+            <div class="u-clearfix checkbox-field">
+              <div class="checkbox-handle"></div>
+              <input class="checkbox-input" id="checkbox_notifications" type="checkbox" name="checkbox_notifications">
+              <label class="checkbox-label" for="checkbox_notifications"></label>
+            </div>
+          </div>
+          <div class="separator-fields"></div>
+        </div>
+        <div>
+          <div class="separator-fields"></div>
+          <label class="label-form" for="select_theme">Thème</label>
+          <div class="separator-fields"></div>
+          <select class="input-form select" id="select_theme">
+            <option value="original" selected>Original</option>
+            <option value="carbon">Carbon</option>
+            <option value="candy">Candy</option>
+          </select> 
+        </div>
+        <div class="separator-button-input"></div>
+        <label class="action-button" onclick="$.notify('Vos changements ont été enregistrés !', 'success');"><span class="fa fa-cog"></span> Valider</label>
+      </form>
+    </div>
+  </div> 
+  <!-- End content -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bigslide.min.js"></script>
+  <script type="text/javascript" src="js/notify.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script>
+    $('#toggle').bigSlide({ 
+      menuWidth: '290px', 
+      easyClose: true,
+      afterOpen: function() {
+        $('body').toggleClass('u-overflow');
+      },
+      afterClose: function() {
+        $('body').toggleClass('u-overflow');
+      } 
+    });
+  </script>
+  <!-- End scripts -->
+</body>
+</html>

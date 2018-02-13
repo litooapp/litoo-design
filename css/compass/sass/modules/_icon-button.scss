@@ -1,0 +1,13 @@
+.icon-button {
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 20px;
+    height: 15px;
+    padding-bottom: 20px;
+    float: left;
+    font-size: 13px;
+    &.bigger {
+        font-size: 20px;
+    }
+}

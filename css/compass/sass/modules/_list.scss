@@ -1,0 +1,32 @@
+.list {
+    padding-left: 0px;
+    background-color: white;
+    list-style-type: none;
+    &.list-messages {
+        border-top: 1px solid #e7e7e9;
+    }
+    &.list-chats {
+        padding-top: 24px;
+        padding-bottom: 65px;
+        border-top: 1px solid #e7e7e9;
+    }
+}
+
+.list-item {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 60px;
+    border-bottom: 1px solid #e7e7e9;
+    border-left: 3px solid transparent;
+    background-color: white;
+    &:active {
+        background-color: #f7f7f7;
+    }
+    &.grey {
+        border-left: 3px solid transparent;
+        background-color: #f7f7f7;
+    }
+    &.highlighted {
+        border-left: 3px solid $main-color;
+    }
+}

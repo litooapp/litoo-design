@@ -1,0 +1,65 @@
+@import "compass/css3/border-radius";
+
+.input-form {
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-style: none none solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #e6e6e6;
+    background-color: transparent;
+    font-size: 12px;
+    @include border-radius(0px);
+    &.one-line {
+        height: 55px;
+        margin-bottom: 3px;
+    }
+    &.last {
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+    }
+    &.in-grey {
+        height: 42px;
+        padding-bottom: 12px;
+    }
+    &.in-grey-last {
+        margin-bottom: 15px;
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+    }
+    &.light {
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(255, 255, 255, 0.12);
+        color: white;
+    }
+    &.textarea {
+        height: 80px;
+    }
+    &.select {
+        background-image: -webkit-linear-gradient(transparent, transparent);
+        background-image: linear-gradient(transparent, transparent);
+    }
+    &:focus {
+        border-bottom-width: 1px;
+        border-bottom-color: $main-color;
+    }
+}
+
+.right-input-link {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    width: 40%;
+    height: 37px;
+    color: #ccc;
+    font-size: 11px;
+    line-height: 37px;
+    text-align: right;
+    text-decoration: none;
+    &:active {
+        color: #333;
+    }
+}

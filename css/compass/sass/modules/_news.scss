@@ -1,0 +1,103 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+
+.list-news {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.list-item-new {
+    margin-top: 50px;
+    @include box-shadow(#e3e3e3 0px 0px 6px 0px);
+    &:first-child {
+        margin-top: 30px;
+    }
+    &:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+.image-new {
+    position: relative;
+    text-align: center;
+}
+
+.text-new {
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    &.no-borders {
+        border-style: none;
+        border-width: 0px;
+    }
+    &.grey {
+        border-style: solid none;
+        border-top-width: 1px;
+        border-top-color: #e6e6e6;
+        border-bottom-width: 1px;
+        border-bottom-color: #e6e6e6;
+        background-color: #fafafa;
+    }
+    &.n-b-b {
+        border-bottom: 1px none black;
+    }
+}
+
+.icon-new {
+    position: relative;
+    margin-top: -63px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid $main-color;
+    @include border-radius(50px);
+    &.icon-star {
+        border-color: $stars-color;
+    }
+}
+
+.title-new {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+.news-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 77px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: white;
+    &.item-new {
+        margin-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    &.home {
+        margin-top: 0px;
+    }
+}
+
+.category-link {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: lighten($background-color, 20%);
+    color: white;
+    font-size: 10px;
+    line-height: 21px;
+    text-decoration: none;
+    @include border-radius(15px);
+    &.category-star {
+        background-color: $stars-color;
+    }
+}

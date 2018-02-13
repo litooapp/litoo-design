@@ -1,0 +1,157 @@
+// Padding (pages)
+.u-padding-top {
+  padding-top: 60px !important;
+}
+
+.u-padding-bottom {
+  padding-bottom: 60px !important;
+}
+
+.u-padding-top-medium {
+  padding-top: 30px !important;
+}
+
+.u-padding-bottom-medium {
+  padding-bottom: 30px !important;
+}
+
+.u-padding-top-light {
+  padding-top: 10px !important;
+}
+
+.u-padding-bottom-light {
+  padding-bottom: 10px !important;
+}
+
+.padding {
+  padding-right: 28px;
+  padding-left: 28px;
+  background-color: transparent;
+  opacity: 1;
+}
+
+// Padding
+.n-p-l {
+  padding-left: 0 !important;
+}
+
+.n-p-t {
+  padding-top: 0 !important;
+}
+
+.n-p-r {
+  padding-right: 0 !important;
+}
+
+.n-p.b {
+  padding-bottom: 0 !important;
+}
+
+// Text
+.b-link {
+color: white;
+font-weight: 400;
+  &:active {
+    color: $main-color;
+  }
+}
+
+.u-uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-icon {
+  font-size: 30px !important;
+}
+
+// Display
+.u-center {
+  text-align: center !important;
+}
+
+.u-relative {
+  position: relative !important;
+}
+
+.u-absolute {
+  position: absolute !important;
+}
+
+.u-fixed {
+  position: fixed !important;
+}
+
+.u-block {
+  display: block !important;
+}
+
+.u-none {
+  display: none !important;
+}
+
+.u-all-width {
+  width: 100% !important;
+}
+
+.u-va-b {
+  vertical-align: bottom !important;
+}
+
+.u-va-m {
+  vertical-align: middle !important;
+}
+
+.middle-section {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 50%;
+  top: 50%;
+}
+
+.bottom-section {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+.u-inline-block {
+  display: inline-block !important;
+}
+
+.u-overflow {
+  overflow: hidden;
+}
+
+// Colors
+.light {
+  color: white !important;
+}
+.light-semitransparent {
+  color: rgba(255, 255, 255, 0.66) !important;
+}
+
+.stars {
+  color: $stars-color !important;
+}
+
+.litoo {
+  color: $main-color !important;
+}
+
+// Background
+.u-facebook-bg {
+  background-color: $facebook-color !important;
+}

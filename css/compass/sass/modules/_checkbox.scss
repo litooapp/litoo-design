@@ -1,0 +1,40 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-field {
+  position: relative;
+  float: right;
+}
+
+.checkbox-label {
+    display: inline-block;
+    width: 35px;
+    height: 15px;
+    min-width: 30px;
+    margin-top: 12px;
+    background-color: #ededed;
+    @include transition(all 150ms ease-out);
+    @include border-radius(15px);
+    &.checked {
+        background-color: lighten($main-color, 30%);
+    }
+}
+
+.checkbox-handle {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: #d6d6d6;
+    margin-top: 9px;
+    @include transition(all 150ms ease-out);
+    @include border-radius(20px);
+    &.checked {
+        background-color: $main-color;
+        @include transform(translate(16px, 0px));
+    }
+}

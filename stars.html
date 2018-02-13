@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Litoo - Stars</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="nav-menu" role="navigation" id="menu">
+    <div class="nav-menu-header">
+      <div class="nav-menu-header">
+        <img src="images/app.png" width="120" height="120" alt=""/>
+      </div>
+    </div>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="home.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-newspaper-o"></div>
+      </div>
+      <div class="nav-menu-titles">News</div>
+      <div class="nav-menu-text-right">6</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="home.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-star stars"></div>
+      </div>
+      <div class="nav-menu-titles">Favoris</div>
+      <div class="nav-menu-text-right stars">2</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="stars.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-users"></div>
+      </div>
+      <div class="nav-menu-titles">Personnalités</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="settings.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-cog"></div>
+      </div>
+      <div class="nav-menu-titles">Paramètres</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="login.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-sign-out"></div>
+      </div>
+      <div class="nav-menu-titles">Se déconnecter</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link last" href="about.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-info"></div>
+      </div>
+      <div class="nav-menu-titles">À propos de Litoo</div>
+    </a>
+  </nav>
+  <!-- End menu -->
+  <!-- Header -->
+  <header class="navbar push">
+    <div class="navbar-button left">
+      <div href="#menu" id="toggle" class="navbar-button-icon home-icon">
+        <div class="bar-home-icon top"></div>
+        <div class="bar-home-icon middle"></div>
+        <div class="bar-home-icon bottom"></div>
+      </div>
+    </div>
+    <div class="navbar-title">Personnalités</div>
+    <div class="navbar-user">
+      <img class="avatar-image" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p48x48/19883991_10212759643722453_7202759091900561778_n.jpg?oh=eaba647904f88ae7f5d5f84c03baf430&oe=5A0ADCF5" alt="" />
+    </div>
+  </header>
+  <!-- End header -->
+  <!-- Content -->
+  <div class="page-content u-relative push" id="panel">
+    <!-- Loading spinner -->
+    <div class="page-content loading-mask">
+      <div class="loading-icon">
+        <div class="fa fa-spinner"></div>
+      </div>
+    </div>
+    <!-- End loading spinner -->
+    <!-- Nav tabs -->
+    <ul role="tablist" class="u-padding-top">
+      <li role="presentation" class="toolbar-top-button active">
+          <a href="#stars" aria-controls="stars" role="tab" data-toggle="tab">Personnalités</a>
+      </li>
+      <li role="presentation" class="toolbar-top-button favorites">
+          <a href="#favorites" aria-controls="favorites" role="tab" data-toggle="tab">Mes personnalités</a>
+      </li>
+    </ul>
+    <!-- End nav tabs -->
+    <!-- Tab panel -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="stars">
+        <div class="search-box-container u-padding-bottom-medium">
+          <!-- Search box -->
+          <input type="search" class="search-box">
+          <p class="search-text">Sélectionnez vos personnalités <span class="fa fa-star litoo"></span></p>
+          <div class="separator-button"></div>
+          <!-- Here people -->
+          <select multiple="multiple" class="image-picker show-html">
+            <option data-img-src="images/people/astrid.jpg" value="1">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" value="2">adixia</option>
+            <option data-img-src="images/people/adrien.png" value="3">adrien</option>
+            <option data-img-src="images/people/julien.jpg" value="4">julien</option>
+            <option data-img-src="images/people/stephanie.jpg" value="5">stephanie</option>
+            <option data-img-src="images/people/eddy.jpg" value="6">eddy</option>
+            <option data-img-src="images/people/astrid.jpg" value="7">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" value="8">adixia</option>
+            <option data-img-src="images/people/adrien.png" value="9">adrien</option>
+            <option data-img-src="images/people/julien.jpg" value="10">julien</option>
+            <option data-img-src="images/people/stephanie.jpg" value="11">stephanie</option>
+            <option data-img-src="images/people/eddy.jpg" value="12">eddy</option>
+            <option data-img-src="images/people/astrid.jpg" value="13">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" value="14">adixia</option>
+            <option data-img-src="images/people/adrien.png" value="15">adrien</option>
+            <option data-img-src="images/people/julien.jpg" value="16">julien</option>
+            <option data-img-src="images/people/stephanie.jpg" value="17">stephanie</option>
+            <option data-img-src="images/people/eddy.jpg" value="18">eddy</option>
+            <option data-img-src="images/people/astrid.jpg" value="19">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" value="20">adixia</option>
+            <option data-img-src="images/people/adrien.png" value="21">adrien</option>
+            <option data-img-src="images/people/julien.jpg" value="22">julien</option>
+            <option data-img-src="images/people/stephanie.jpg" value="23">stephanie</option>
+            <option data-img-src="images/people/eddy.jpg" value="24">eddy</option>
+            <option data-img-src="images/people/astrid.jpg" value="25">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" value="26">adixia</option>
+            <option data-img-src="images/people/adrien.png" value="27">adrien</option>
+            <option data-img-src="images/people/julien.jpg" value="28">julien</option>
+            <option data-img-src="images/people/stephanie.jpg" value="29">stephanie</option>
+            <option data-img-src="images/people/eddy.jpg" value="30">eddy</option>
+            <option data-img-src="images/people/astrid.jpg" value="31">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" value="32">adixia</option>
+            <option data-img-src="images/people/adrien.png" value="33">adrien</option>
+            <option data-img-src="images/people/julien.jpg" value="34">julien</option>
+            <option data-img-src="images/people/stephanie.jpg" value="35">stephanie</option>
+            <option data-img-src="images/people/eddy.jpg" value="36">eddy</option>
+            <option data-img-src="images/people/astrid.jpg" value="37">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" value="38">adixia</option>
+            <option data-img-src="images/people/adrien.png" value="39">adrien</option>
+            <option data-img-src="images/people/julien.jpg" value="40">julien</option>
+            <option data-img-src="images/people/stephanie.jpg" value="41">stephanie</option>
+            <option data-img-src="images/people/eddy.jpg" value="42">eddy</option>
+          </select>
+        </div>
+        <label class="action-button bottom-fixed push"><span class="fa fa-newspaper-o"></span> Voir les news</label>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="favorites">
+        <div class="search-box-container u-padding-bottom-medium">
+          <!-- Search box -->
+          <input type="search" class="search-box stars">
+          <p class="search-text">Mettez vos personnalités en favoris <span class="fa fa-star stars"></span></p>
+          <div class="separator-button"></div>
+          <!-- Here favorite people -->
+          <select multiple="multiple" class="image-picker show-html">
+            <option data-img-src="images/people/astrid.jpg" data-img-class="favorite" value="1">astrid</option>
+            <option data-img-src="images/people/adixia.jpg" data-img-class="favorite" value="2">adixia</option>
+            <option data-img-src="images/people/julien.jpg" data-img-class="favorite" value="3">julien</option>
+          </select>
+          <div class="separator-bottom"></div>
+        </div>
+        <label class="action-button bottom-fixed favorites push"><span class="fa fa-newspaper-o"></span> Voir les news</label>
+      </div>
+    </div>
+    <!-- End tab panel -->
+  </div> 
+  <!-- End content -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image-picker.min.js"></script>
+  <script type="text/javascript" src="js/tab.min.js"></script>
+  <script type="text/javascript" src="js/bigslide.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script>
+    $("select").imagepicker({show_label: true});
+
+    $('#toggle').bigSlide({ 
+      menuWidth: '290px', 
+      easyClose: true,
+      afterOpen: function() {
+        $('body').toggleClass('u-overflow');
+      },
+      afterClose: function() {
+        $('body').toggleClass('u-overflow');
+      } 
+    });
+  </script>
+  <!-- End scripts -->
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import "compass/css3/animation";
+
+.loading-icon {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    right: 0px;
+    bottom: 50%;
+    width: 44px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 40px;
+    color: rgba($main-color, 0.72);
+    @include animation-name(spin);
+    @include animation-duration(2500ms);
+    @include animation-iteration-count(infinite);
+    @include animation-timing-function(linear);
+    &.splash {
+        top: 70%;
+        width: 30px;
+        color: rgba(255, 255, 255, 0.17);
+        font-size: 36px;
+    }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}

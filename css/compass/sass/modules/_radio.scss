@@ -1,0 +1,33 @@
+@import "compass/css3/border-radius";
+
+.radio-button {
+    position: relative;
+    display: inline-block;
+    margin-left: 31px;
+    float: right;
+}
+
+.radios-container {
+    padding-top: 9px;
+    line-height: 21px;
+}
+
+.radio-bullet {
+    margin-left: -23px;
+    opacity: 0;
+}
+
+.radio-bullet-replacement {
+    position: absolute;
+    left: -4px;
+    top: 4px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #c2c2c2;
+    @include border-radius(15px);
+    &.checked {
+        border-color: $main-color;
+        border-bottom-width: 1px;
+        background-color: $main-color;
+    }
+}

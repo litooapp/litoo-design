@@ -1,0 +1,13 @@
+.label-form {
+    margin-bottom: 0px;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 1px;
+    &.middle {
+        display: inline-block;
+        line-height: 36px;
+    }
+    &.light {
+        color: rgba(255, 255, 255, 0.34);
+    }
+}

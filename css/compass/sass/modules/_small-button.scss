@@ -1,0 +1,77 @@
+@import "compass/css3/border-radius";
+
+.small-button {
+    width: auto;
+    margin-right: 12px;
+    padding: 7px 16px;
+    background-color: $main-color;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    @include border-radius(2px);
+    &.icon-only {
+        padding-right: 7px;
+        padding-left: 7px;
+        text-align: center;
+        &.grey {
+            background-color: #e8e8e8;
+            color: #878787;
+            &.right {
+                margin-right: 0px;
+                margin-left: 16px;
+                float: right;
+                &.last{
+                    margin-left: 0;
+                }
+            }
+            &.selected {
+            background-color: #fafafa;
+            }
+            &.p-r {
+                margin-right: 5px;
+                &.selected2 {
+                    background-color: #fafafa;
+                }
+            }
+        }
+        &.social-squared {
+            &.facebook {
+                background-color: $facebook-color;
+            }
+            &.twitter {
+                background-color: $twitter-color;
+            }
+            &.pinterest {
+                background-color: $pinterest-color;
+            }
+            &.dribbble {
+                background-color: $dribble-color;
+            }
+        }
+    }
+    &.grey {
+        background-color: #e8e8e8;
+        color: #878787;
+        &.right {
+            float: right;
+        }
+        &.last {
+            margin-right: 0px;
+        }
+    }
+    &.social {
+        margin-right: 7px;
+        margin-bottom: 7px;
+        padding-right: 12px;
+        padding-left: 12px;
+        &.facebook {
+            background-color: $facebook-color;
+        }
+        &.twitter {
+            background-color: $twitter-color;
+        }
+        &.last{
+            margin-right: 0;
+        }
+    }
+}

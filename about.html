@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Litoo - À propos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="nav-menu" role="navigation" id="menu">
+    <div class="nav-menu-header">
+      <div class="nav-menu-header">
+        <img src="images/app.png" width="120" height="120" alt=""/>
+      </div>
+    </div>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="home.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-newspaper-o"></div>
+      </div>
+      <div class="nav-menu-titles">News</div>
+      <div class="nav-menu-text-right">6</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="home.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-star stars"></div>
+      </div>
+      <div class="nav-menu-titles">Favoris</div>
+      <div class="nav-menu-text-right stars">2</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="stars.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-users"></div>
+      </div>
+      <div class="nav-menu-titles">Personnalités</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="settings.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-cog"></div>
+      </div>
+      <div class="nav-menu-titles">Paramètres</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link" href="login.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-sign-out"></div>
+      </div>
+      <div class="nav-menu-titles">Se déconnecter</div>
+    </a>
+    <a class="u-clearfix u-inline-block nav-menu-link last" href="about.html">
+      <div class="icon-list-menu">
+        <div class="fa fa-info"></div>
+      </div>
+      <div class="nav-menu-titles">À propos de Litoo</div>
+    </a>
+  </nav>
+  <!-- End menu -->
+  <!-- Header -->
+  <header class="navbar push">
+    <div class="navbar-button left">
+      <div href="#menu" id="toggle" class="navbar-button-icon home-icon">
+        <div class="bar-home-icon top"></div>
+        <div class="bar-home-icon middle"></div>
+        <div class="bar-home-icon bottom"></div>
+      </div>
+    </div>
+    <div class="navbar-title">À propos</div>
+    <div class="navbar-user">
+      <img class="avatar-image" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p48x48/19883991_10212759643722453_7202759091900561778_n.jpg?oh=eaba647904f88ae7f5d5f84c03baf430&oe=5A0ADCF5" alt="" />
+    </div>
+  </header>
+  <!-- End header -->
+  <!-- Content -->
+  <div class="page-content u-relative push" id="panel">
+    <!-- Loading spinner -->
+    <div class="page-content loading-mask">
+      <div class="loading-icon">
+        <div class="fa fa-spinner"></div>
+      </div>
+    </div>
+    <!-- End loading spinner -->
+    <div class="padding u-padding-top u-center">
+      <div class="logo-login"></div>
+      <div class="separator-button"></div>
+      <p>Version: litoo-design</p>
+      <p>Powered by Litoo Ltd.</p>
+      <div class="separator-button"></div>
+      <p>Litoo, c'est l'app qui cherche les news croustillantes à ta place. À utiliser sans modération !</p>
+      <div class="separator-button"></div>
+      <div class="separator-button"></div>
+      <a class="action-button u-facebook-bg" href="https://www.facebook.com/litooapp/" target="_blank">Facebook</a>
+      <div class="separator-bottom"></div>
+    </div>
+  </div> 
+  <!-- End content -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bigslide.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script>
+    $('#toggle').bigSlide({ 
+      menuWidth: '290px', 
+      easyClose: true,
+      afterOpen: function() {
+        $('body').toggleClass('u-overflow');
+      },
+      afterClose: function() {
+        $('body').toggleClass('u-overflow');
+      } 
+    });
+  </script>
+  <!-- End scripts -->
+</body>
+</html>

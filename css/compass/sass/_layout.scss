@@ -1,0 +1,28 @@
+@import "compass/css3/transition";
+
+.page-content {
+    width: 100%;
+    min-height: 100%;
+    // iPhone-X, iPad Pro custom
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        padding-top: 20px;
+    }
+    &.loading-mask {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        display: none;
+        text-align: center;
+        background-color: rgba(black, 0.2);
+        @include transition(opacity 250ms linear);
+        &.stop-loading {
+            opacity: 0;
+        }
+    }
+    &.bg-gradient {
+        background-color: $background-color;
+    }
+}

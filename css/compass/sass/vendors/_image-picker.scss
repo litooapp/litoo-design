@@ -1,0 +1,57 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/user-interface";
+
+ul.thumbnails.image_picker_selector {
+    padding: 0px;
+    overflow: auto;
+    text-align: center;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    ul {
+        padding: 0px;
+        overflow: auto;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        margin: 0px 12px 35px 0px;
+        &.group {
+            width: 100%;
+        } 
+        &.group_title {
+            float: none; 
+        }
+        .thumbnail {
+            width: 75px;
+            height: 75px;
+            padding: 3px;
+            border: 1px solid #dddddd;
+            @include user-select(none);
+            @include border-radius(50%);
+            &.favorite.selected{
+                background: $stars-color;
+                > p {
+                    color: $stars-color;
+                }
+            } 
+            &.selected {
+                background: $main-color;
+                > p {
+                    color: $main-color;
+                }
+            }
+            img {
+                margin-bottom: 5px;
+                -webkit-user-drag: none;
+                @include border-radius(50%);
+            }
+            > p {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
