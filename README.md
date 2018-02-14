@@ -9,6 +9,8 @@ evolve during its lifetime. You can reuse the code as long as you keep in mind t
 - [FontAwesome icons](http://fontawesome.io/)
 
 ## Changelog
+- 1.0.2 -  change position external link
+- 1.0.1 - add external link
 - 1.0.0 - release version
 
 ## License
