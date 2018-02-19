@@ -1,6 +1,24 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
 
+.news-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 77px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: white;
+    &.item-new {
+        margin-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    &.home {
+        margin-top: 0px;
+    }
+}
+
 .list-news {
     display: inline-block;
     width: 100%;
@@ -65,33 +83,6 @@
     line-height: 1.6em;
 }
 
-.title-link {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: Montserrat, sans-serif;
-    color: grey;
-    font-size: 5px;
-    line-height: 1.6em;
-}
-
-.news-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    margin-top: 77px;
-    padding-right: 15px;
-    padding-left: 15px;
-    background-color: white;
-    &.item-new {
-        margin-top: 0px;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    &.home {
-        margin-top: 0px;
-    }
-}
-
 .category-link {
     display: inline-block;
     width: auto;
@@ -108,5 +99,17 @@
     @include border-radius(15px);
     &.category-star {
         background-color: $stars-color;
+    }
+}
+
+.link-new {
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+    color: grey;
+    .link-host {
+        line-height: 1.6em;
+        font-size: 15px;
     }
 }
